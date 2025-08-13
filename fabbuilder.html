@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAB Builder - Home</title>
+    <link rel="icon" type="image/png" href="fabicon.png">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <nav class="sidebar" aria-label="Main navigation">
+            <div class="logo-container">
+                <img src="https://studio.fabbuilder.com/logo-no-background.svg" alt="FAB Builder Logo" class="sidebar-logo">
+                <div class="logo-text">FAB Builder</div>
+            </div>
+
+            <div class="menu">
+                <a href="Dashboard.html" class="menu-link active">Dashboard</a>
+                <a href="applications.html" class="menu-link">Applications</a>
+                <a href="earncredits.html" class="menu-link">Earn Credits</a>
+                <a href="referral.html" class="menu-link">Referral</a>
+                <a href="fabbuilder.html" class="menu-link">Users</a>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="settings.html" class="menu-link">Settings</a>
+                <a href="support.html" class="menu-link">Support</a>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <main class="main" role="main">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <!-- optional small logo or title -->
+                </div>
+                <div class="topbar-right">
+                    Credits: <strong>1</strong> |
+                    Language:
+                    <select aria-label="Select language">
+                        <option>English</option>
+                        <option>Hindi</option>
+                    </select>
+                    | <span class="username">Ritu Singh</span>
+                </div>
+            </header>
+
+            <!-- Filters -->
+            <details class="filters">
+                <summary>Filters (Click to expand)</summary>
+                <div class="filter-grid">
+                    <label>Email:
+                        <input type="text" placeholder="Enter email">
+                    </label>
+                    <label>Name:
+                        <input type="text" placeholder="Enter name">
+                    </label>
+                    <label>Status:
+                        <select>
+                            <option value="">-- Select --</option>
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </label>
+                    <label>Role:
+                        <select>
+                            <option value="">-- Select --</option>
+                            <option value="admin">Admin</option>
+                            <option value="user">User</option>
+                        </select>
+                    </label>
+
+                    <div class="filter-actions">
+                        <button class="btn">Search</button>
+                        <button class="btn btn-ghost">Reset</button>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Action Buttons -->
+            <div class="actions">
+                <button class="btn">Invite</button>
+                <button class="btn">Import</button>
+                <button class="btn btn-danger">Delete</button>
+                <button class="btn">Export to Excel</button>
+            </div>
+
+            <!-- User Table -->
+            <table class="user-table" aria-label="User list">
+                <thead>
+                    <tr>
+                        <th>Avatar</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="avatar-cell">
+                            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="small-avatar">
+                        </td>
+                        <td>Ritu singh</td>
+                        <td>singhj@gmail.com</td>
+                        <td>Admin</td>
+                        <td><span class="status-active">Active</span></td>
+                        <td>
+                            <a href="#">View</a> |
+                            <a href="#">Edit</a> |
+                            <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 FAB Builder. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAB Builder - Settings</title>
+    <link rel="icon" type="image/png" href="fabicon.png">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <nav class="sidebar" aria-label="Main navigation">
+            <div class="logo-container">
+                <img src="https://studio.fabbuilder.com/logo-no-background.svg" alt="FAB Builder Logo" class="sidebar-logo">
+                <div class="logo-text">FAB Builder</div>
+            </div>
+
+            <div class="menu">
+                <a href="Dashboard.html" class="menu-link active">Dashboard</a>
+                <a href="applications.html" class="menu-link">Applications</a>
+                <a href="earncredits.html" class="menu-link">Earn Credits</a>
+                <a href="referral.html" class="menu-link">Referral</a>
+                <a href="fabbuilder.html" class="menu-link">Users</a>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="settings.html" class="menu-link">Settings</a>
+                <a href="support.html" class="menu-link">Support</a>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <main class="main" role="main">
+            <header class="topbar">
+                <div class="topbar-left"></div>
+                <div class="topbar-right">
+                    Credits: <strong>1</strong> |
+                    Language:
+                    <select aria-label="Select language">
+                        <option>English</option>
+                        <option>Hindi</option>
+                    </select>
+                    | <span class="username">Ritu Singh</span>
+                </div>
+            </header>
+
+            <!-- ================= SETTINGS PAGE CONTENT START ================= --> 
+            <section class="settings-container">
+                <h1>Settings</h1>
+
+                <!-- Logo Upload -->
+                <div class="setting-item">
+                    <label for="logo-upload">Logo:</label>
+                    <div class="upload-box">
+                        <input type="file" id="logo-upload" accept="image/*" hidden>
+                        <label for="logo-upload" class="upload-label">
+                            <span>+</span><br>Upload
+                        </label>
+                        <span class="file-name" id="logo-file-name"></span>
+                    </div>
+                </div>
+
+                <!-- Background Image Upload -->
+                <div class="setting-item">
+                    <label for="bg-upload">Background Image:</label>
+                    <div class="upload-box">
+                        <input type="file" id="bg-upload" accept="image/*" hidden>
+                        <label for="bg-upload" class="upload-label">
+                            <span>+</span><br>Upload
+                        </label>
+                        <span class="file-name" id="bg-file-name"></span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="settings-actions">
+                    <button class="btn save">Save</button>
+                    <button class="btn reset">Reset</button>
+                    <button class="btn cancel">Cancel</button>
+                </div>
+            </section>
+            <!-- ================= SETTINGS PAGE CONTENT END ================= -->
+
+        </main>
+    </div>
+
+    <!-- ================= JS VALIDATION ================= -->
+   
+</body>
+</html>
